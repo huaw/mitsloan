@@ -1,0 +1,15 @@
+/**
+ * @Filename: global.scss
+ * @Author: 
+ */
+
+/*
+ Responsive Breakpoints
+ usage: @media screen and (min-width: $breakpoint-lg) {...}
+        @media screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {...}
+*/
+
+$breakpoint-sm: 35.5em; // >= 568px
+$breakpoint-md: 48em; // >= 768px
+$breakpoint-lg: 64em; // >= 1024px
+$breakpoint-xl: 80em; // >= 1280px

@@ -1,0 +1,12 @@
+﻿/* the following will be included in the styles-dropdown in TinyMCE */
+h3 {
+	EditMenuName: Heading 3;
+}
+
+h2 {
+    EditMenuName: Heading 2;
+}
+a.button {
+	EditMenuTitle: Link styles;
+	EditMenuName: Button;
+}
