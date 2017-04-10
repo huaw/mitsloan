@@ -83,3 +83,9 @@ EPiUpdatePackage
 
 # VM
 Vagrant/temp
+
+#NuGet
+packages/
+*.nupkg
+node_modules/*
+!node_modules/readme.txt
