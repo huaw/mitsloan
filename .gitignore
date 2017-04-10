@@ -8,6 +8,7 @@
 !/MITSloan.Website/**/Web.config
 !/MITSloan.Website/packages.config
 !/MITSloan.Website/module.config
+!/MITSloan.Website/EPiServerLog.config
 MITSloan.Website/Client/.idea/.name
 MITSloan.Website/Client/.idea/Client.iml
 MITSloan.Website/Client/.idea/encodings.xml
@@ -68,13 +69,9 @@ EPiUpdatePackage
 
 /MITSloan.Website/Client/node_modules
 /MITSloan.Website/Client/css
-/MITSloan.Website/Config/*.config
-/MITSloan.Website/Configs/*.config
-/MITSloan.Website.CommerceManager/Configs/*.config
-/MITSloan.Website.CommerceManager/Config/*.config
-/MITSloan.Website/EPiServerLog.config
-/MITSloan.Website.CommerceManager/EPiServerLog.config
-/MITSloan.Website/Config/*.config
+# /MITSloan.Website/Config/*.config
+# /MITSloan.Website/Configs/*.config
+# /MITSloan.Website/EPiServerLog.config
 /MITSloan.Website/License.config
 /MITSloan.Website/robots.txt
 
