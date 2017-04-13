@@ -51,7 +51,7 @@ All Starter Kit project Code Analysis is using "Microsoft Managed Recommended Ru
  * "Microsoft Managed Recommended Rules" Description:
 These rules focus on the most critical problems in your code, including potential security holes, application crashes, and other important logic and design errors. You should include this rule set in any custom rule set you create for your projects.
  
-#6. NuGet used packages used for the starter kit solution
+#6. NuGet packages used for the starter kit solution
   Antlr.3.4.1.9004
   Castle.Core.3.3.3
   Castle.Windsor.3.3.0
