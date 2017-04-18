@@ -16,7 +16,7 @@ namespace MITSloan.Core.Implementation.Areas.Core.Controllers.Pages
     {
 		public ActionResult Index(ContentDetailPageType currentPage)
         {
-            var viewModel = new ContentDetailPageViewModel()
+            var viewModel = new ContentDetailSocialLinksPageViewModel()
             {
                 PageTitle = currentPage.PageTitle,
                 Body = currentPage.Body,

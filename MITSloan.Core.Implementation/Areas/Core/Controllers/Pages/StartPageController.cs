@@ -19,7 +19,7 @@ namespace MITSloan.Core.Implementation.Areas.Core.Controllers.Pages
         public ActionResult Index(StartPageType currentPage)
         {
 
-            var viewModel = new StartPageViewModel()
+            var viewModel = new StartSocialLinksPageViewModel()
             {
                 FirstContentAreaTitle = currentPage.FirstContentAreaTitle,
                 FirstContentArea = currentPage.FirstContentArea,

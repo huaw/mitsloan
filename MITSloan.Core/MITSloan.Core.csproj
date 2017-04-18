@@ -152,12 +152,19 @@
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Infrastructure\Lazy\ILazy.cs" />
+    <Compile Include="Manager\Navigation\Entities\NavigationLink.cs" />
+    <Compile Include="Manager\Navigation\INavigationLink.cs" />
+    <Compile Include="Manager\Navigation\INavigationManager.cs" />
     <Compile Include="Models\Interfaces\Blocks\ITextBlock.cs" />
     <Compile Include="Models\Interfaces\Media\IDocument.cs" />
     <Compile Include="Models\Interfaces\Media\IImage.cs" />
+    <Compile Include="Models\Interfaces\Pages\Characteristics\IHasOverlaySetting.cs" />
     <Compile Include="Models\Interfaces\Pages\Characteristics\IHasBody.cs" />
+    <Compile Include="Models\Interfaces\Pages\Characteristics\IHasBodyCssClass.cs" />
+    <Compile Include="Models\Interfaces\Pages\Characteristics\IHasSoicalSharePageImage.cs" />
     <Compile Include="Models\Interfaces\Pages\Characteristics\IHasPageTitle.cs" />
     <Compile Include="Models\Interfaces\Pages\Characteristics\IHasSeoMetaData.cs" />
+    <Compile Include="Models\Interfaces\Pages\IHeaderSettings.cs" />
     <Compile Include="Models\Interfaces\Pages\IPage.cs" />
     <Compile Include="Models\Interfaces\Pages\ISiteSettings.cs" />
     <Compile Include="Models\Interfaces\Pages\IStartPage.cs" />
@@ -169,6 +176,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

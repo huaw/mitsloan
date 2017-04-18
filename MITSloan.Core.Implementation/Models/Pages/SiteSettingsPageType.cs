@@ -39,6 +39,9 @@ namespace MITSloan.Core.Implementation.Models.Pages
         [Display(Name = "Tracking Script", Description = "Includes opening and ending <script/> tags", GroupName = SystemTabNames.Content, Order = 0)]
         public virtual string TrackingScript { get; set; }
 
+        [Display(Name = "Show Overlay On Academics", Description = "Select Academics page to show overlay for this item under the navigation", GroupName = SystemTabNames.Content, Order = 0)]
+        public virtual PageReference ApplyAcadamyOverlayPageReference { get; set; }
+
         public override void SetDefaultValues(ContentType contentType)
         {
             base.SetDefaultValues(contentType);

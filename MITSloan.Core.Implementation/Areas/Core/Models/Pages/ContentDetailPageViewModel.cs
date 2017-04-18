@@ -8,7 +8,7 @@ using EPiServer.Core;
 
 namespace MITSloan.Core.Implementation.Areas.Core.Models.Pages
 {
-	public class ContentDetailPageViewModel
+	public class ContentDetailSocialLinksPageViewModel : SocialLinksPageViewModel
     {
         public string PageTitle { get; set; }
 		public IHtmlString Body { get; set; }

@@ -19,7 +19,7 @@ namespace MITSloan.Core.Implementation.Models.Pages
 		GUID = "A947A022-4753-4B8F-AFE3-1F832C3697E5",
 		AvailableInEditMode = true,
 		GroupName = CoreGroupNames.PageTypeGroupName)]
-	public class ContentDetailPageType : SeoOptimizedTemplatedBasePageType, IHasPageTitle, IHasBody
+	public class ContentDetailPageType : OptimizedTemplatedBasePageType, IHasPageTitle, IHasBody
 	{
 		[Required]
 		[CultureSpecific(true)]

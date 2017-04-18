@@ -10,5 +10,6 @@ namespace MITSloan.Core.Implementation.Models.Tabs
     {
         public const string Layout = "Layout";
         public const string Tracking = "Tracking";
+        public const string Footer = "Footer";
     }
 }

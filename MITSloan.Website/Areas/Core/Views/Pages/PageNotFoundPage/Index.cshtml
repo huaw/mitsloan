@@ -1,0 +1,13 @@
+﻿@model PageNotFoundPageViewModel
+
+<div class="error-page-bg">
+    <div class="wrapper">
+        <h1>@Html.PropertyFor(model => model.Heading)</h1>
+
+        <h2>@Html.PropertyFor(model => model.SubHeading)</h2>
+
+        <div class="error-body">
+            @Html.PropertyFor(model => model.Body)
+        </div>
+    </div>
+</div>

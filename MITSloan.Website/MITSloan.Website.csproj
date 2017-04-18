@@ -397,6 +397,9 @@
     <Content Include="Config\System.ServiceModel.Services.config" />
     <Content Include="Config\EPiServer.Search.config" />
     <Content Include="App_Data\GeoLiteCity.dat" />
+    <Content Include="Areas\Core\Views\Shared\Partials\_Header.cshtml" />
+    <Content Include="Areas\Core\Views\Pages\UnexpectedErrorPage\Index.cshtml" />
+    <Content Include="Areas\Core\Views\Pages\PageNotFoundPage\Index.cshtml" />
     <None Include="Config\System.Web.AnonymousIdentification.config" />
     <None Include="Config\System.Web.Authentication.config" />
     <None Include="Config\System.Web.Authorization.Administrators.config" />

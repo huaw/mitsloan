@@ -10,6 +10,8 @@ using MITSloan.Core.Implementation.Infrastructure.Lazy;
 using MITSloan.Core.Implementation.Models.Pages;
 using MITSloan.Core.Infrastructure.Lazy;
 using MITSloan.Core.Models.Interfaces.Pages;
+using MITSloan.Core.Manager.Navigation;
+using MITSloan.Core.Implementation.Manager.Navigation;
 
 namespace MITSloan.Core.Implementation.Bootstrapper
 {
@@ -17,6 +19,9 @@ namespace MITSloan.Core.Implementation.Bootstrapper
     {
         public CoreImplementationBootstrapper()
         {
+            //Managers
+            this.For<INavigationManager>().Use<NavigationManager>();
+
             this.For<ILazy<IStartPage>>().Use<LazyStartPage<StartPageType>>();
 
             //Settings

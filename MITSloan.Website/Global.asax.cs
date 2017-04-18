@@ -19,6 +19,8 @@ namespace MITSloan.Website
             GlobalConfiguration.Configure(WebApiConfig.Register);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            base.Application_Start();
         }
         
     }

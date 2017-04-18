@@ -201,7 +201,19 @@
     <Compile Include="Areas\Core\CoreAreaRegistration.cs" />
     <Compile Include="Areas\Core\Models\Blocks\TextBlockViewModel.cs" />
     <Compile Include="Areas\Core\Models\Pages\ContentDetailPageViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Pages\ICommonPageViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Pages\IPageViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Pages\ISeoPageViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Pages\PageNotFoundPageViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Pages\PageViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Pages\PlainPageViewModel.cs" />
     <Compile Include="Areas\Core\Models\Pages\StartPageViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Shared\DisplayTemplates\ImageLinkViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Shared\DisplayTemplates\LinkViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Shared\Partials\FooterLinksViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Shared\Partials\FooterViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Shared\Partials\HeaderViewModel.cs" />
+    <Compile Include="Areas\Core\Models\Shared\Partials\LayoutViewModel.cs" />
     <Compile Include="Bootstrapper\CoreImplementationBootstrapper.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="Infrastructure\Initialization\CustomizedRenderingInitialization.cs" />
@@ -210,17 +222,22 @@
     <Compile Include="Infrastructure\Lazy\LazySiteSettings.cs" />
     <Compile Include="Infrastructure\Lazy\LazyStartPage.cs" />
     <Compile Include="Infrastructure\Mvc\EPiServerViewEngine.cs" />
+    <Compile Include="Infrastructure\Mvc\Filters\LayoutFilters\HeaderResultFilter.cs" />
+    <Compile Include="Manager\Navigation\NavigationManager.cs" />
     <Compile Include="Models\Blocks\TextBlockType.cs" />
     <Compile Include="Models\CoreGroupNames.cs" />
     <Compile Include="Models\Media\DocumentFileMediaType.cs" />
     <Compile Include="Models\Media\ImageFileMediaType.cs" />
     <Compile Include="Models\Pages\ContentDetailPageType.cs" />
-    <Compile Include="Models\Pages\SeoOptimizedTemplatedBasePageType.cs" />
+    <Compile Include="Models\Pages\PageNotFoundPageType.cs" />
+    <Compile Include="Models\Pages\OptimizedTemplatedBasePageType.cs" />
     <Compile Include="Models\Pages\SettingsBasePageType.cs" />
     <Compile Include="Models\Pages\SiteSettingsPageType.cs" />
     <Compile Include="Models\Pages\StartPageType.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\Pages\TemplatedBasePageType.cs" />
+    <Compile Include="Models\RenderingSettings\RenderingSettings.cs" />
     <Compile Include="Models\Tabs\CoreSettingsTabNames.cs" />
     <Compile Include="Models\Tabs\CoreTabNames.cs" />
     <Compile Include="Models\Tabs\SiteSettingsTabNames.cs" />

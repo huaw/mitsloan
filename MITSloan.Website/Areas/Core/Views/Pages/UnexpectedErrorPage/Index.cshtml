@@ -1,0 +1,44 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!-- [if gt IE 8] <!-->
+<html lang="en">
+<!-- <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>We're sorry...</title>
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @Styles.Render("~/master/styles")
+</head>
+<body class="error-page error-unexpected">
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <div class="site-container">
+        <div class="component-header" data-view="header">
+            <div class="wrapper pure-g">
+                <div class="logo-container pure-u-1-2 pure-u-md-5-24">
+                    <img src="/Static/Core/Img/xylem-logo.png" alt="Xylem - Lets Solve Water" />
+                </div>
+            </div>
+        </div>
+
+        <div class="error-page-bg">
+            <div class="wrapper">
+                <h1>We’re sorry...</h1>
+
+                <h2>We’re having some technical difficulties.</h2>
+
+                <p class="error-body">
+                    Don’t be sad. Our engineers are already on the case and will have our site back online shortly.
+                    Thanks for your patience.
+                </p>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/master/scripts")
+</body>
+</html>

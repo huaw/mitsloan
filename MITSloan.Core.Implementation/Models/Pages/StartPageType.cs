@@ -21,7 +21,7 @@ namespace MITSloan.Core.Implementation.Models.Pages
         AvailableInEditMode = false,
         GroupName = CoreGroupNames.PageTypeGroupName)]
     [AvailableContentTypes(Availability = Availability.All)]
-    public class StartPageType : SeoOptimizedTemplatedBasePageType, IStartPage
+    public class StartPageType : OptimizedTemplatedBasePageType, IStartPage
     {
         [Required]
         [CultureSpecific(true)]

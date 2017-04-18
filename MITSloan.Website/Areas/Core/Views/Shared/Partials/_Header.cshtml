@@ -1,0 +1,54 @@
+﻿@using EPiServer.Web.Mvc.Html
+@using MITSloan.Core.Implementation.Models.RenderingSettings
+@model ISocialLinksPageViewModel
+
+<div>
+    <div>
+        <div>
+            @Html.PropertyFor(model => model.Layout.Logo)
+        </div>
+        <div>
+            <ul>
+                
+                @foreach (LinkViewModel item in Model.Header.NavigationLinks)
+                {
+                    <li class="@(item.IsOverLayNavigationPage?RenderingSettings.OverlayCssClass:string.Empty) ">@Html.PropertyFor(model => item)</li>
+                }
+                
+                
+            </ul>
+            <ul>
+                <li class="search desktop">
+                    <form action="@Model.Header.SearchBoxButtonLink" method="get" autocomplete="off">
+                        <div class="glyph-container">
+                            <input maxlength="100" type="text" class="" name="query"
+                                   placeholder="@Html.PropertyFor(model => model.Header.SearchboxPlaceholder)" />
+                           
+                        </div>
+
+                        <button type="submit" class=""></button>
+                    </form>
+                </li>
+            </ul>
+            <ul class="mobile-links">
+                <li>
+                    <span class="mobile-search-trigger"></span>
+                    <div class="close-button"></div>
+
+                </li>
+                <li><span class="cd-dropdown-trigger"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-search-layer">
+        <form action="@Model.Header.SearchBoxButtonLink" method="get" autocomplete="off">
+            <div class="form-container">
+                <input maxlength="100" type="text" class="query-field icon-uni1F50E"
+                       name="query"
+                       placeholder="@Model.Header.SearchboxPlaceholder" />
+                <div class="predictive-search-container"></div>
+                <button type="submit" class=""></button>
+            </div>
+        </form>
+    </div>
+</div>

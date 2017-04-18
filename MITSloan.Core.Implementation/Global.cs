@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MITSloan.Core.Implementation.Infrastructure.Mvc.Filters.LayoutFilters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace MITSloan.Core.Implementation
     {
         protected virtual void Application_Start()
         {
-
+            GlobalFilters.Filters.Add(new HeaderResultFilter());
         }
 
         protected override void RegisterRoutes(RouteCollection routes)

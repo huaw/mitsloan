@@ -8,6 +8,6 @@ namespace MITSloan.Core.Implementation.Models.Tabs
 {
     public static class CoreTabNames
     {
-        public const string Seo = "Search Engine Optimization";
+        public const string SeoSocialLinks = "SEO and Social Link Settings";
     }
 }

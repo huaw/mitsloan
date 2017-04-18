@@ -1,16 +1,36 @@
-﻿<!DOCTYPE html>
+﻿@model ISocialLinksPageViewModel
+
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@ViewBag.Title</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>@Model.SeoTitle</title>
+
+        <meta name="description" content="@Model.SeoDescription">
+        <meta name="keywords" content="@Model.SeoKeywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         @Styles.Render("~/master/styles")
+
+        @Html.Raw(Model.SeoTrackingScript)
+        @RenderSection("Scripts", required: false)
+
+        @if (Model.CanonicalUrl != null)
+        {
+            <link rel="canonical" href="@Model.CanonicalUrl.OriginalString" />
+        }
     </head>
-    <body class="container-fluid">
-    <div class="body">
+<body class="@Model.Layout.BodyCssClass">
+
+    @Html.RenderEPiServerQuickNavigator()
+    <div class="site-container">        
+        @Html.Partial("_Header", Model)
         @RenderBody()
+        @* @Html.Partial("_Footer", Model.Footer) *@
     </div>
 
-        @Scripts.Render("~/master/scripts")
-    </body>
+    @Scripts.Render("~/master/scripts")
+
+    
+</body>
 </html>

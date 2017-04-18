@@ -7,7 +7,7 @@ using EPiServer.Core;
 
 namespace MITSloan.Core.Implementation.Areas.Core.Models.Pages
 {
-    public class StartPageViewModel
+    public class StartSocialLinksPageViewModel : SocialLinksPageViewModel
     {
         public string FirstContentAreaTitle { get; set; }
         public ContentArea FirstContentArea { get; set; }
